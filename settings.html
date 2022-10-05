@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/master.css" />
+    <link rel="stylesheet" href="css/framework.css" />
+    <script
+      src="https://kit.fontawesome.com/b1766a371e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="content">
+      <div class="sidebar">
+        <h2>Eslam</h2>
+        <ul>
+          <li class="active">
+            <i class="fa-solid fa-chart-gantt"></i
+            ><a href="index.html">Dashboard</a>
+          </li>
+          <li><i class="fa-solid fa-gear"></i><a href="">Settings</a></li>
+          <li><i class="fa-regular fa-user"></i><a href="">Profile</a></li>
+          <li>
+            <i class="fa-solid fa-diagram-project"></i><a href="">Projects</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-graduation-cap"></i><a href="">Courses</a>
+          </li>
+          <li><i class="fa-solid fa-user-group"></i><a href="">Friends</a></li>
+          <li><i class="fa-solid fa-file"></i><a href="">Files</a></li>
+          <li><i class="fa-solid fa-book"></i><a href="">Plans</a></li>
+        </ul>
+      </div>
+      <div class="other-content">
+        <div class="search-bar">
+          <div class="input">
+            <input type="text" placeholder="Type A Keyboard" />
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+          <div class="user">
+            <i class="fa-regular fa-bell"></i>
+            <img src="assets/user.png" alt="" />
+          </div>
+        </div>
+        <div class="main-content">
+          <h2>settings</h2>
+          <div class="grid">
+            <div class="box">
+              <div class="setting1 p-15">
+                <h3 class="mt-0">Site Control</h3>
+                <p>Control The Website If There Is Maintenance</p>
+                <h5 class="m-0 mt-20">Website Control</h5>
+                <div class="flex-end-between">
+                  <p>Open/Close Website And Type The Reason</p>
+                  <span></span>
+                </div>
+                <textarea placeholder="Close Message Content"></textarea>
+              </div>
+            </div>
+            <div class="box p-15">
+              <h3 class="mt-0">General Info</h3>
+              <p>General Information About Your Account</p>
+              <div class="setting2">
+                <form>
+                  <label for="first">First Name</label>
+                  <input type="text" placeholder="First Name" id="first" />
+                  <label for="last">Last Name</label>
+                  <input type="text" placeholder="Last Name" id="last" />
+                  <label for="email">Email</label>
+                  <div class="d-flex">
+                    <input
+                      type="email"
+                      disabled
+                      placeholder="Email Name"
+                      value="as@g.co"
+                      id="email"
+                    />
+                    <button>Change</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="box p-15">
+              <h3>Security Info</h3>
+              <p>Security Information About Your Account</p>
+              <div class="setting3 flex-between mt-20">
+                <div class="text">
+                  <h6 class="m-0">Password</h6>
+                  <p>Last Change On 25/10/2021</p>
+                </div>
+                <button class="btn m-00">Change</button>
+              </div>
+              <div class="setting3 flex-between mt-10">
+                <div class="text">
+                  <h6 class="m-0">Two-Factor Authentication</h6>
+                  <p>Enable/Disable The Feature</p>
+                </div>
+                <span></span>
+              </div>
+              <div class="setting3 flex-between mt-10">
+                <div class="text">
+                  <h6 class="m-0">Devices</h6>
+                  <p>Check The Login Devices List</p>
+                </div>
+                <button class="device">Devices</button>
+              </div>
+            </div>
+            <div class="box p-15">
+              <h3>Social Info</h3>
+              <p>Social Media Information</p>
+              <div class="setting4">
+                <div class="twitter">
+                  <input
+                    disabled
+                    class="w-full"
+                    type="text"
+                    value="Twitter Username"
+                  />
+                  <i class="fa-brands fa-twitter"></i>
+                </div>
+                <div class="facebook">
+                  <input
+                    disabled
+                    class="w-full"
+                    type="text"
+                    value="Facebook Username"
+                  />
+                  <i class="fa-brands fa-facebook-f"></i>
+                </div>
+                <div class="linkedin">
+                  <input
+                    disabled
+                    class="w-full"
+                    type="text"
+                    value="Linkedin Username"
+                  />
+                  <i class="fa-brands fa-linkedin"></i>
+                </div>
+                <div class="youtube">
+                  <input
+                    disabled
+                    class="w-full"
+                    type="text"
+                    value="Youtube Usermame"
+                  />
+                  <i class="fa-brands fa-youtube"></i>
+                </div>
+              </div>
+            </div>
+            <div class="box p-15">
+              <h3>Widgets Control</h3>
+              <p>Show/Hide Widgets</p>
+              <div class="setting5 mt-20">
+                <div>
+                  <input type="checkbox" checked name="" id="one" />
+                  <label for="one">Quick Draft</label>
+                </div>
+                <div>
+                  <input type="checkbox" checked name="" id="ocne" />
+                  <label for="ocne">Yearly Targets</label>
+                </div>
+                <div>
+                  <input type="checkbox" checked name="" id="ocsne" />
+                  <label for="ocsne">Tickets Statistics</label>
+                </div>
+                <div>
+                  <input type="checkbox" checked name="" id="ocssne" />
+                  <label for="ocssne">Latest News</label>
+                </div>
+                <div>
+                  <input type="checkbox" name="" id="ocsssne" />
+                  <label for="ocsssne">Latest Tasks</label>
+                </div>
+                <div>
+                  <input type="checkbox" checked name="" id="oscsssne" />
+                  <label for="oscsssne">Top Search Items</label>
+                </div>
+              </div>
+            </div>
+            <div class="box p-15">
+              <h3>Backup Manager</h3>
+              <p>Control Backup Time And Location</p>
+              <div class="setting5 mt-20">
+                <div>
+                  
+                  <input type="radio" checked name="onleOne" id="onde" />
+                  <label for="onde">Daily</label>
+                </div>
+                <div>
+                  <input type="radio" name="onleOne" id="ocdne" />
+                  <label for="ocdne">Weekly</label>
+                </div>
+                <div>
+                  <input type="radio" name="onleOne" id="ocsnde" />
+                  <label for="ocsnde">Monthly</label>
+                </div>
+              </div>
+              <div class="border ">
+                <div class="setting6 d-flex gap-10 txt-c">
+                  <div class="set blue">
+                    <i class="fa-solid fa-server blue"></i>
+                    <p class="blue">Megaman</p>
+                  </div>
+                  <div class="set blue">
+                    <i class="fa-solid fa-server blue"></i>
+                    <p class="blue">Zero</p>
+                  </div>
+                  <div class="set blue">
+                    <i class="fa-solid fa-server blue"></i>
+                    <p class="blue">Sigma</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
